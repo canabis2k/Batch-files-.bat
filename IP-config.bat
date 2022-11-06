@@ -1,0 +1,1 @@
+ipconfig /all > %COMPUTERNAME%.txt
