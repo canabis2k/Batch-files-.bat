@@ -1,0 +1,13 @@
+PATH=%CD%\Offline\tech
+
+cd \Offline\rp5.ru\
+
+wget --no-check-certificate -O Batumi.html  http://rp5.ru/9868/ru
+
+rplstr -s:"/mainStyle.css?ver=4.2" -r:"mainStyle.css@ver=4.2" "Batumi.html"
+rplstr -s:"/img/" -r:"img/" "Batumi.html"
+rplstr -s:"/css/" -r:"css/" "Batumi.html"
+rplstr -s:"/Scripts/" -r:"Scripts/" "Batumi.html"
+rplstr -s:"/images/" -r:"images/" "Batumi.html"
+
+cd \
